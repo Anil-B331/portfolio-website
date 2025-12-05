@@ -1,8 +1,8 @@
 body {
   font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #f7f9fb 60%, #e0e7ef 100%);
-  color: #222;
+  background: linear-gradient(120deg, #38124A 0%, #EC4186 100%);
+  color: #fff;
 }
 
 header {
@@ -30,7 +30,7 @@ header nav a:hover {
 }
 
 .hero {
-  background: linear-gradient(120deg, #4f8cff 0%, #3358e0 100%);
+  background: linear-gradient(120deg, #38124A 0%, #EC4186 100%);
   color: #fff;
   text-align: center;
   padding: 3rem 1rem 2rem 1rem;
@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 main {
-  background: #fff;
+  background:linear-gradient(120deg, #38124A 0%, #EC4186 100%);
   margin-top: -2rem;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
@@ -94,7 +94,7 @@ section {
 }
 
 h2 {
-  color: #3358e0;
+  color: #EC4186;
   margin-bottom: 1rem;
   font-size: 2rem;
   border-bottom: 2px solid #e0e7ef;
@@ -109,7 +109,7 @@ h2 {
 }
 
 .project-card {
-  background: #f4f8ff;
+  background: linear-gradient(120deg, #38124A 0%, #EC4186 100%);
   border-radius: 8px;
   padding: 1.2rem 1rem;
   box-shadow: 0 2px 8px rgba(79,140,255,0.07);
@@ -119,16 +119,16 @@ h2 {
 .project-card:hover {
   transform: translateY(-8px) scale(1.04);
   box-shadow: 0 12px 32px rgba(79,140,255,0.18);
-  background: #eaf2ff;
+  background: #7b828c;
 }
 
 .project-card h3 {
   margin-top: 0;
-  color: #3358e0;
+  color: #f87eaf;
 }
 
 .project-card a {
-  color: #4f8cff;
+  color: #f87eaf;
   text-decoration: none;
   font-weight: 700;
 }
@@ -142,8 +142,8 @@ h2 {
 }
 
 .skills-list li {
-  background: #e0e7ef;
-  color: #3358e0;
+  background: linear-gradient(120deg, #38124A 0%, #EC4186 100%);
+  color: #f87eaf;
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
   font-weight: 600;
@@ -153,7 +153,7 @@ h2 {
 footer {
   text-align: center;
   padding: 1.5rem 0 1rem 0;
-  background: #3358e0;
+  background: linear-gradient(120deg, #38124A 0%, #EC4186 100%);
   color: #fff;
   margin-top: 2rem;
   border-radius: 0 0 12px 12px;
@@ -189,4 +189,7 @@ footer {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+}
+a{
+  color: #f87eaf;
 }
