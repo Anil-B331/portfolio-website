@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyanu Baniya | Portfolio</title>
+    <meta name="description" content="Portfolio of Gyanu Baniya - Web Developer, Python Developer, and CSIT Student.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Portfolio-Gyanu<span class="dot"></span></a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Close button for mobile -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-4-line"></i>
+            </div>
+            
+            <!-- Theme Toggle Button -->
+            <div class="theme-toggle" id="theme-button">
+                 <i class="ri-moon-line change-theme" id="theme-icon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HERO ====================-->
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <span class="hero__subtitle">Hello, I'm</span>
+                    <h1 class="hero__title">Gyanu Baniya</h1>
+                    <h3 class="hero__education">B.Sc. CSIT Student & Developer</h3>
+                    <p class="hero__description">
+                        I build pixel-perfect, engaging, and accessible digital experiences. 
+                        Passionate about Full Stack Development & Python.
+                    </p>
+                    
+                    <div class="hero__buttons">
+                        <a href="#contact" class="button">Contact Me <i class="ri-send-plane-fill"></i></a>
+                        <a href="#projects" class="button button--ghost">My Work <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    
+                    <div class="hero__social">
+                        <a href="https://github.com/Anil-B331" target="_blank" class="hero__social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="hero__social-link">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="https://www.facebook.com/itsmegyanubaniya" target="_blank" class="hero__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__image-wrapper">
+                    <div class="hero__blob">
+                        <img src="assets/profile-clean.png" alt="Gyanu Baniya" class="hero__img">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <a href="#about" class="hero__scroll-button">
+                    <i class="ri-mouse-line"></i>
+                    <span class="hero__scroll-text">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <p class="about__description">
+                        Hi! I'm Gyanu Baniya, a tech enthusiast with a degree in <b>B.Sc. CSIT</b>. 
+                        I have a passion for building modern, user-friendly digital experiences. 
+                        My journey involves mastering the frontend with <b>HTML, CSS, JavaScript</b> and diving deep into backend logic with <b>Python and Django</b>.
+                    </p>
+                    <p class="about__description">
+                        Whether it's crafting intuitive interfaces or designing scalable web solutions, 
+                        I'm driven by clean code and continuous learning.
+                    </p>
+                    
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class="ri-code-box-line about__icon"></i>
+                            <h3 class="about__title">Developer</h3>
+                            <span class="about__subtitle">Web & Python</span>
+                        </div>
+                        <div class="about__box">
+                            <i class="ri-book-open-line about__icon"></i>
+                            <h3 class="about__title">Education</h3>
+                            <span class="about__subtitle">B.Sc. CSIT</span>
+                        </div>
+                        <div class="about__box">
+                            <i class="ri-award-line about__icon"></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">Projects & Freelance</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My Technical Level</span>
+
+            <div class="skills__container container grid">
+                <!-- Frontend -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Development</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML5</h3>
+                                    <span class="skills__level">Experienced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">CSS3</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Development</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">Django</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">Git & GitHub</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Most Recent Work</span>
+
+            <div class="projects__container container grid">
+                
+                <!-- Project 1 -->
+                <article class="projects__card">
+                    <div class="projects__image">
+                       <img src="assets/project-hospital.png" alt="Hospital Management App" class="projects__img">
+                    </div>
+                    
+                    <div class="projects__content">
+                        <h3 class="projects__title">Hospital Management App</h3>
+                        <p class="projects__description">
+                           A Python/Tkinter application for managing hospital records, patients, and appointments.
+                        </p>
+                        <div class="projects__tags">
+                            <span class="projects__tag">Python</span>
+                            <span class="projects__tag">Tkinter</span>
+                        </div>
+                        <a href="https://github.com/Anil-B331/Hospital-Management-System" target="_blank" class="projects__button">
+                            View Code <i class="ri-github-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="projects__card">
+                    <div class="projects__image">
+                         <img src="assets/project-portfolio.png" alt="Awesome Portfolio" class="projects__img">
+                    </div>
+                    
+                    <div class="projects__content">
+                        <h3 class="projects__title">Awesome Portfolio</h3>
+                        <p class="projects__description">
+                           A modern personal portfolio website showcasing skills and projects.
+                        </p>
+                        <div class="projects__tags">
+                            <span class="projects__tag">HTML</span>
+                            <span class="projects__tag">CSS</span>
+                        </div>
+                        <a href="#" class="projects__button">
+                            View Demo <i class="ri-links-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="projects__card">
+                    <div class="projects__image">
+                       <img src="assets/project-blog.png" alt="Blog Platform" class="projects__img">
+                    </div>
+                    
+                    <div class="projects__content">
+                        <h3 class="projects__title">Blog Platform</h3>
+                        <p class="projects__description">
+                           A simple blog platform with user authentication and markdown support.
+                        </p>
+                        <div class="projects__tags">
+                            <span class="projects__tag">Django</span>
+                            <span class="projects__tag">Python</span>
+                        </div>
+                        <a href="#" class="projects__button">
+                            View Project <i class="ri-links-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Talk to me</h3>
+                    
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="ri-mail-line contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">Contact via web</span>
+                            
+                            <a href="mailto:example@email.com" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="ri-messenger-line contact__card-icon"></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">Gyanu Baniya</span>
+                            
+                            <a href="https://m.me/itsmegyanubaniya" target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Write me your project</h3>
+                    
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Names</label>
+                            <input type="text" placeholder="Insert your name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" placeholder="Insert your email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Project</label>
+                            <textarea cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+                        </div>
+
+                        <button class="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Gyanu</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+            </ul>
+
+            <div class="footer__social">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+            </div>
+
+            <span class="footer__copy">
+                &#169; Gyanu Baniya. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JS -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
