@@ -664,6 +664,10 @@ img {
     transform: translateX(0.25rem);
 }
 
+.contact__card:hover .contact__button {
+    transform: translateX(0.25rem);
+}
+
 /* Contact Form */
 .contact__form-div {
     position: relative;
