@@ -1,0 +1,6 @@
+{
+  "name": "Gyanu Baniya - Portfolio",
+  "description": "An immersive, editorial-style personal portfolio website for Gyanu Baniya, a B.Sc. CSIT Student & Developer, with custom layout transitions, real-time widgets, and sleek responsive grids.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
