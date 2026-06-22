@@ -5,7 +5,7 @@ export const developerProfile = {
   title: "B.Sc. CSIT Student & Developer",
   location: "Kathmandu, Nepal",
   email: "gyanub331@gmail.com",
-  github: "https://github.com/gyanubaniya",
+  github: "https://github.com/Anil-B331",
   linkedin: "https://linkedin.com/in/gyanubaniya",
   facebook: "https://facebook.com/gyanu.baniya",
   tagline: "I build pixel-perfect, engaging, and accessible digital experiences. Passionate about Full Stack Development & Python.",
