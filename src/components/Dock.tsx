@@ -35,13 +35,13 @@ export default function Dock({ onNavigate, onOpenCommand, activeSection }: DockP
   ];
 
   return (
-    <div className="fixed bottom-6 left-0 right-0 z-40 flex justify-center pointer-events-none p-4">
+    <div className="fixed bottom-3 sm:bottom-6 left-0 right-0 z-40 flex justify-center pointer-events-none px-2 sm:px-4">
       <motion.div
         id="floating-dock-container"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, type: "spring", damping: 20, stiffness: 400 }}
-        className="pointer-events-auto bg-brand-dark/85 border border-brand-gray/80 backdrop-blur-md rounded-full px-4 py-2.5 flex items-center gap-2.5 md:gap-3.5 shadow-[0_12px_40px_rgba(0,0,0,0.6)] border-b-2"
+        className="pointer-events-auto bg-brand-dark/85 border border-brand-gray/80 backdrop-blur-md rounded-full px-2.5 py-2 flex items-center gap-1.5 sm:px-4 sm:py-2.5 sm:gap-2.5 md:gap-3.5 shadow-[0_12px_40px_rgba(0,0,0,0.6)] border-b-2 max-w-[calc(100vw-0.75rem)] overflow-x-auto no-scrollbar"
       >
         {/* Dock Items */}
         {dockItems.map((item, idx) => {
@@ -72,13 +72,13 @@ export default function Dock({ onNavigate, onOpenCommand, activeSection }: DockP
                   onNavigate(item.id);
                 }}
                 style={{ transform: `scale(${scale})` }}
-                className={`p-2.5 rounded-full flex items-center justify-center transition-all duration-150 relative ${
+                className={`p-2 rounded-full flex items-center justify-center transition-all duration-150 relative sm:p-2.5 ${
                   isActive
                     ? "bg-[#CBFF00] text-brand-black"
                     : "bg-brand-charcoal text-brand-neutral hover:text-[#ffffff] border border-brand-gray/50 hover:bg-brand-gray"
                 }`}
               >
-                <IconComp className="w-4 h-4" />
+                <IconComp className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
 
                 {/* Soft glow on active */}
                 {isActive && (
@@ -104,7 +104,7 @@ export default function Dock({ onNavigate, onOpenCommand, activeSection }: DockP
         })}
 
         {/* Divider line */}
-        <div className="w-[1px] h-6 bg-brand-gray/60 self-center" />
+        <div className="w-px h-6 bg-brand-gray/60 self-center" />
 
         {/* Interactive sound utility toggle button */}
         <div
@@ -118,13 +118,13 @@ export default function Dock({ onNavigate, onOpenCommand, activeSection }: DockP
           <button
             onClick={toggleSound}
             style={{ transform: `scale(${hoveredIndex === dockItems.length ? 1.25 : 1})` }}
-            className={`p-2.5 rounded-full flex items-center justify-center transition-all duration-150 ${
+            className={`p-2 rounded-full flex items-center justify-center transition-all duration-150 sm:p-2.5 ${
               soundOn
                 ? "bg-brand-charcoal text-brand-neon hover:text-[#ffffff] border border-brand-[#CBFF00]/30 hover:bg-brand-gray"
                 : "bg-brand-charcoal text-[#555e67] hover:text-brand-light border border-brand-gray/50"
             }`}
           >
-            {soundOn ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+            {soundOn ? <Volume2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> : <VolumeX className="w-3.5 h-3.5 sm:w-4 sm:h-4" />}
           </button>
 
           <AnimatePresence>
@@ -153,9 +153,9 @@ export default function Dock({ onNavigate, onOpenCommand, activeSection }: DockP
           <button
             onClick={onOpenCommand}
             style={{ transform: `scale(${hoveredIndex === dockItems.length + 1 ? 1.25 : 1})` }}
-            className="p-2.5 rounded-full flex items-center justify-center bg-brand-charcoal border border-brand-neon/60 hover:border-brand-neon hover:bg-brand-gray text-[#ffffff] hover:text-[#ffffff] transition-all"
+            className="p-2 rounded-full flex items-center justify-center bg-brand-charcoal border border-brand-neon/60 hover:border-brand-neon hover:bg-brand-gray text-[#ffffff] hover:text-[#ffffff] transition-all sm:p-2.5"
           >
-            <Sparkles className="w-4 h-4 text-brand-neon animate-pulse" />
+            <Sparkles className="w-3.5 h-3.5 text-brand-neon animate-pulse sm:w-4 sm:h-4" />
           </button>
 
           <AnimatePresence>
