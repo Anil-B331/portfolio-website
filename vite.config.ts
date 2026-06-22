@@ -18,6 +18,6 @@ export default defineConfig(() => {
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
     // 👇 Important for GitHub Pages + custom domain
-    base: 'portfolio-website', 
+    base: '/', 
   };
 });
