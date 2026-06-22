@@ -284,7 +284,7 @@ export default function BentoGrid() {
 
         <div className="py-3 flex flex-col gap-2">
           <a
-            href="https://github.com/gyanubaniya"
+            href="https://github.com/Anil-B331"
             target="_blank"
             rel="noopener noreferrer"
             onClick={playTick}
@@ -292,7 +292,7 @@ export default function BentoGrid() {
           >
             <span className="flex items-center gap-2 font-mono">
               <Github className="w-4 h-4 text-brand-light" />
-              /gyanubaniya
+              /Anil-B331
             </span>
             <ChevronRight className="w-3.5 h-3.5 opacity-0 group-hover/link:opacity-100 transition-opacity" />
           </a>
